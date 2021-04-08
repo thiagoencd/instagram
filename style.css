@@ -1,5 +1,6 @@
 :root{
     --azul: #0095f6;
+    --gelo: #ffffff;
 }
 *{
     padding: 0;
@@ -51,7 +52,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--gelo);
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
@@ -79,7 +80,7 @@ body{
 
 .instagram-login{
     background-color: var(--azul);
-    color: #ffffff;
+    color: var(--gelo);
     padding: 8px;
     border-radius: 4px;
 }
@@ -126,4 +127,32 @@ body{
 
 .app-download:nth-child(2){
     background-image: url('/img/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: var(--gelo);
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
 }
